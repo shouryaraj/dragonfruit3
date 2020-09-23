@@ -27,7 +27,7 @@
   },
   "homepage": "https://dragonfruit3.herokuapp.com/",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -51,6 +51,7 @@
     "chart.js": "^2.9.3",
     "classnames": "2.2.6",
     "evergreen-ui": "^5.1.1",
+    "express": "^4.17.1",
     "moment": "2.24.0",
     "node-sass": "4.13.1",
     "nouislider": "14.1.1",
