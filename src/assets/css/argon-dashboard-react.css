@@ -29,7 +29,7 @@
   --white: #fff;
   --gray: #8898aa;
   --gray-dark: #32325d;
-  --light: #ced4da;
+  --light: #ffffff;
   --lighter: #e9ecef;
   --primary: #5e72e4;
   --secondary: #f7fafc;
@@ -319,8 +319,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 600;
-  line-height: 1.5;
-  color: #32325d; }
+  line-height: 1.5;}
 
 h1, .h1 {
   font-size: 1.625rem; }
@@ -8605,7 +8604,7 @@ a.text-danger:hover, a.text-danger:focus {
   color: #ec0c38 !important; }
 
 .text-light {
-  color: #adb5bd !important; }
+  color: white !important; }
 
 a.text-light:hover, a.text-light:focus {
   color: #919ca6 !important; }
@@ -8839,7 +8838,7 @@ button.bg-gray-dark:focus {
   background-color: #20203c !important; }
 
 .bg-light {
-  background-color: #ced4da !important; }
+  background-color: #ffffff !important; }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
@@ -8930,7 +8929,7 @@ button.bg-lighter:focus {
   background: linear-gradient(87deg, #32325d 0, #44325d 100%) !important; }
 
 .bg-gradient-light {
-  background: linear-gradient(87deg, #ced4da 0, #cecfda 100%) !important; }
+  background: linear-gradient(87deg, #ffffff 0, #cecfda 100%) !important; }
 
 .bg-gradient-lighter {
   background: linear-gradient(87deg, #e9ecef 0, #e9eaef 100%) !important; }
@@ -9048,7 +9047,7 @@ button.section-secondary:focus {
   background-color: #d2e3ee !important; }
 
 .section-light {
-  background-color: #ced4da !important; }
+  background-color: #ffffff !important; }
 
 a.section-light:hover, a.section-light:focus,
 button.section-light:hover,
@@ -9730,7 +9729,7 @@ a.text-gray-dark:hover, a.text-gray-dark:focus {
   color: #20203c !important; }
 
 .text-light {
-  color: #ced4da !important; }
+  color: #ffffff !important; }
 
 a.text-light:hover, a.text-light:focus {
   color: #b1bbc4 !important; }
@@ -10268,7 +10267,7 @@ a.btn-icon-only {
 
 .chart {
   position: relative;
-  height: 350px; }
+}
 
 .chart-sm {
   height: 230px; }
@@ -12400,7 +12399,7 @@ article h5 + figure {
       background: #5e72e4; }
     .datepicker table tr td.highlighted.disabled, .datepicker table tr td.highlighted.disabled:active {
       background: #5e72e4;
-      color: #ced4da; }
+      color: #ffffff; }
   .datepicker table tr td.today {
     background: white; }
     .datepicker table tr td.today.focused {
@@ -14330,3 +14329,11 @@ button:focus, :focus {
 
 .table .badge i {
   margin-right: 10px; }
+
+.beFknWhite{
+    color: #ffffff;
+}
+
+.beFknBlue{
+  color: #32325d;
+}

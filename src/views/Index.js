@@ -81,7 +81,7 @@ class Index extends React.Component {
                 <CardHeader className="bg-transparent">
                   <Row className="align-items-center">
                     <div className="col">
-                      <h3 className="text-uppercase beFknWhite ls-1 mb-1">
+                      <h3 className="text-uppercase beFknWhite ls-1 mb-1" style= {{color: "#ffffff"}}>
                         Overview
                       </h3>
                       

@@ -28,22 +28,29 @@ class RadarChart extends Component{
 
     render(){
         return(
-            <div className = "radarChart">
+            <div className = "radarChart" style= {{width: "650px", height: "350px"}}>
                 <Radar
                     data={this.state.data}
                     options={{ 
+                        responsive:true,
+                        maintainAspectRatio: false,
                         legend:{
+                            display: true,
                             position: 'right'
+                            
                         },
                         scale: {
                             ticks: {
                                 display: false,
                                 suggestedMin: 0,
                                 suggestedMax: 5,
-                                stepSize: 1
+                                stepSize: 1,
+                                backdropColor: "#ffffff"
                             },
                             pointLabels: {
-                                fontColor: "#ffffff"
+                                fontColor: "#ffffff",
+                                fontFamily: 'Open Sans, sans-serif',
+                                fontSize: 11
                             }
                         }
                         
