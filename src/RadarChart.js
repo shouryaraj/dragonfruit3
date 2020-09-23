@@ -26,6 +26,32 @@ class RadarChart extends Component {
 
     }
 
+    componentDidMount(){
+
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+          };
+          
+          fetch("https://dragonfruit-server/getUnit", requestOptions)
+            .then(response => response.json())
+            .then((json) =>{
+                let currentWeekData = []
+                currentWeekData.push(json.week[0].questions.C1)
+                currentWeekData.push(json.week[0].questions.B1)
+                currentWeekData.push(json.week[0].questions.SR1)
+                currentWeekData.push(json.week[0].questions.A1)
+                currentWeekData.push(json.week[0].questions.A2)
+                currentWeekData.push(json.week[0].questions.O1)
+                
+                let tempState = this.state.data
+                tempState.datasets[1].data = currentWeekData
+
+                this.setState(tempState)
+            })
+            .catch(error => console.log('error', error));
+    }
+
     render() {
         return (
             <div className="radarChart" style={{ width: "100%", height: "100%" }}>
