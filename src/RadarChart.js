@@ -34,6 +34,9 @@ class RadarChart extends Component {
                     options={{
                         responsive: true,
                         maintainAspectRatio: false,
+                        tooltips: {
+                            enabled: false
+                       },
                         gridLines: {
                             display: true,
                             color: "#ffffff"
@@ -41,8 +44,11 @@ class RadarChart extends Component {
                         legend: {
                             display: true,
                             position: 'right',
-                            fontColor: "#ffffff",
-                            fontFamily: 'Open Sans, sans-serif'
+                            labels:{
+                                fontColor: "#ffffff",
+                                fontFamily: 'Open Sans, sans-serif',
+                                fontSize: 10
+                            }   
                         },
                         scale: {
                             ticks: {
