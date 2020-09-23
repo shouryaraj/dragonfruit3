@@ -8,14 +8,14 @@ class RadarChart extends Component{
             data: {
                 labels: ["Confidence Rating", "Content Completeness", "Learning Confidence", "Content Positivity", "Discussion Confidence", "Workload Management"],
                 datasets: [{
-                    label: ["Unit Average"],
+                    label: ["Past Weeks"],
                     data: [4.5,2,4,3,2,5],
                     backgroundColor: 'rgba(197, 250, 243,0.2)',
                     borderColor: '#30e3ca',
                     borderWidth: 2,
                 },
                 {
-                    label: ["Current Average"],
+                    label: ["Current Week"],
                     data: [3,4,5,4,1,5],
                     backgroundColor: 'rgba(47, 137, 252,0.2)',
                     borderColor: '#2f89fc',
@@ -34,10 +34,15 @@ class RadarChart extends Component{
                     options={{ 
                         responsive:true,
                         maintainAspectRatio: false,
+                        gridLines: {
+                            display: true,
+                            color: "#ffffff"
+                        },
                         legend:{
                             display: true,
-                            position: 'right'
-                            
+                            position: 'right',
+                            fontColor: "#ffffff",
+                            fontFamily: 'Open Sans, sans-serif'
                         },
                         scale: {
                             ticks: {
@@ -51,7 +56,10 @@ class RadarChart extends Component{
                                 fontColor: "#ffffff",
                                 fontFamily: 'Open Sans, sans-serif',
                                 fontSize: 11
-                            }
+                            },
+                            gridLines: {
+                                color: 'grey'
+                              }
                         }
                         
                     }}

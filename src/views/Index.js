@@ -84,7 +84,12 @@ class Index extends React.Component {
                       <h3 className="text-uppercase beFknWhite ls-1 mb-1" style= {{color: "#ffffff"}}>
                         Overview
                       </h3>
-                      
+                      <h6 style= {{color: "#ffffff"}}>Outward values mean that there have 
+                      <br />
+                      been more positive responses from students.
+                      <br />
+                      In general the larger the area the better.
+                      </h6>
                     </div>
                   </Row>
                 </CardHeader>
