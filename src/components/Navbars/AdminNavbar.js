@@ -49,14 +49,14 @@ class AdminNavbar extends React.Component {
             </Link>
             <Form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
               <FormGroup className="mb-0">
-                <InputGroup className="input-group-alternative">
+                {/* <InputGroup className="input-group-alternative">
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
                       <i className="fas fa-search" />
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input placeholder="Search" type="text" />
-                </InputGroup>
+                </InputGroup> */}
               </FormGroup>
             </Form>
             <Nav className="align-items-center d-none d-md-flex" navbar>
@@ -66,12 +66,12 @@ class AdminNavbar extends React.Component {
                     <span className="avatar avatar-sm rounded-circle">
                       <img
                         alt="..."
-                        src={require("assets/img/theme/team-4-800x800.jpg")}
+                        src={require("assets/img/brand/defaultPicture.png")}
                       />
                     </span>
                     <Media className="ml-2 d-none d-lg-block">
                       <span className="mb-0 text-sm font-weight-bold">
-                        Jessica Jones
+                        Michelle Nguyen
                       </span>
                     </Media>
                   </Media>
