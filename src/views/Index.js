@@ -49,6 +49,7 @@ import {
 import Header from "components/Headers/Header.js";
 
 import RadarChart from "../RadarChart"
+import LineChart from "../LineChart"
 
 import { Popover, Pane, Button as EvergreenButton, Text } from 'evergreen-ui'
 
@@ -166,7 +167,7 @@ class Index extends React.Component {
                   <Row className="align-items-center">
                     <div className="col">
                       <h3 className="text-uppercase beFknWhite ls-1 mb-1" style={{ color: "#ffffff" }}>
-                        Survey Responses Over Time
+                        Attendance Survey Responses Over Weeks
                       </h3>
 
                     </div>
@@ -175,7 +176,7 @@ class Index extends React.Component {
                 <CardBody>
                   {/* Chart */}
                   <div className="chart">
-                    {/* <RadarChart /> */}
+                    <LineChart />
                   </div>
                 </CardBody>
               </Card>
