@@ -16,6 +16,10 @@
 
 */
 import React from "react";
+import ratingboxes from "assets/img/brand/ratingboxes.png";
+import radarchart from "assets/img/brand/radarchart.png";
+import studentcomments from "assets/img/brand/studentcomments.png";
+import studentattendance from "assets/img/brand/studentattendance.png";
 
 // reactstrap components
 import {
@@ -41,7 +45,7 @@ class Profile extends React.Component {
         {/* Page content */}
         <Container className="mt--7" fluid>
           <Row>
-            <Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
+            {/* <Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
               <Card className="card-profile shadow">
                 <Row className="justify-content-center">
                   <Col className="order-lg-2" lg="3">
@@ -55,8 +59,8 @@ class Profile extends React.Component {
                       </a>
                     </div>
                   </Col>
-                </Row>
-                <CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                </Row> */}
+            {/* <CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                   <div className="d-flex justify-content-between">
                     <Button
                       className="mr-4"
@@ -77,8 +81,8 @@ class Profile extends React.Component {
                       Message
                     </Button>
                   </div>
-                </CardHeader>
-                <CardBody className="pt-0 pt-md-4">
+                </CardHeader> */}
+            {/* <CardBody className="pt-0 pt-md-4">
                   <Row>
                     <div className="col">
                       <div className="card-profile-stats d-flex justify-content-center mt-md-5">
@@ -124,15 +128,15 @@ class Profile extends React.Component {
                       Show more
                     </a>
                   </div>
-                </CardBody>
-              </Card>
-            </Col>
+                </CardBody> */}
+            {/* </Card>
+            </Col> */}
             <Col className="order-xl-1" xl="8">
               <Card className="bg-secondary shadow">
-                <CardHeader className="bg-white border-0">
+                {/* <CardHeader className="bg-white border-0">
                   <Row className="align-items-center">
                     <Col xs="8">
-                      <h3 className="mb-0">My account</h3>
+                      <h3 className="mb-0">My </h3>
                     </Col>
                     <Col className="text-right" xs="4">
                       <Button
@@ -145,185 +149,102 @@ class Profile extends React.Component {
                       </Button>
                     </Col>
                   </Row>
-                </CardHeader>
+                </CardHeader> */}
                 <CardBody>
                   <Form>
                     <h6 className="heading-small text-muted mb-4">
-                      User information
+                      Average Student ratings
                     </h6>
                     <div className="pl-lg-4">
+                      <img src={ratingboxes} alt="Logo" />
+
                       <Row>
-                        <Col lg="6">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-username"
-                            >
-                              Username
+
+                        <FormGroup>
+                          <label
+                            className="form-control-label"
+                            htmlFor="input-username"
+                          >
+                            Little boxes on the top of the dashboard are filled with the average student ratings
+                            for each survey measurement for the current week. Percentages are shown below these ratings,
+                            which represent the increase/decrease of the current week's rating when compared
+                            to the respective rating from the previous week.
                             </label>
-                            <Input
-                              className="form-control-alternative"
-                              defaultValue="lucky.jesse"
-                              id="input-username"
-                              placeholder="Username"
-                              type="text"
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col lg="6">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-email"
-                            >
-                              Email address
-                            </label>
-                            <Input
-                              className="form-control-alternative"
-                              id="input-email"
-                              placeholder="jesse@example.com"
-                              type="email"
-                            />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row>
-                        <Col lg="6">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-first-name"
-                            >
-                              First name
-                            </label>
-                            <Input
-                              className="form-control-alternative"
-                              defaultValue="Lucky"
-                              id="input-first-name"
-                              placeholder="First name"
-                              type="text"
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col lg="6">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-last-name"
-                            >
-                              Last name
-                            </label>
-                            <Input
-                              className="form-control-alternative"
-                              defaultValue="Jesse"
-                              id="input-last-name"
-                              placeholder="Last name"
-                              type="text"
-                            />
-                          </FormGroup>
-                        </Col>
+
+                        </FormGroup>
                       </Row>
                     </div>
                     <hr className="my-4" />
                     {/* Address */}
                     <h6 className="heading-small text-muted mb-4">
-                      Contact information
+                      Overview: radar Chart
                     </h6>
                     <div className="pl-lg-4">
+                      <img src={radarchart} alt="Logo" />
+
                       <Row>
-                        <Col md="12">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-address"
-                            >
-                              Address
+
+                        <FormGroup>
+                          <label
+                            className="form-control-label"
+                            htmlFor="input-username"
+                          >
+                            Being the main focus of the dashboard, the radar chart shows all the survey measurements
+                            in one place, which gives academic staff the ability to gain a good grasp of the student cohort's engagement and understanding
+                            of weekly learning content. Moreover, results yielded within different weeks of the teaching semester can be compared against one another or filtered out in just one click on the right-sided icons.
                             </label>
-                            <Input
-                              className="form-control-alternative"
-                              defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
-                              id="input-address"
-                              placeholder="Home Address"
-                              type="text"
-                            />
-                          </FormGroup>
-                        </Col>
+
+                        </FormGroup>
                       </Row>
+                    </div>
+
+                    <hr className="my-4" />
+                    {/* Description */}
+                    <h6 className="heading-small text-muted mb-4">Student Comments</h6>
+                    <div className="pl-lg-4">
+                      <img src={studentcomments} alt="Logo" />
+
                       <Row>
-                        <Col lg="4">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-city"
-                            >
-                              City
+
+                        <FormGroup>
+                          <label
+                            className="form-control-label"
+                            htmlFor="input-username"
+                          >
+                            At the end of each survey, students are encouraged to provide feedback on the current week's
+                            learning content. To the right of the radar chart, these comments will be listed.
                             </label>
-                            <Input
-                              className="form-control-alternative"
-                              defaultValue="New York"
-                              id="input-city"
-                              placeholder="City"
-                              type="text"
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col lg="4">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-country"
-                            >
-                              Country
-                            </label>
-                            <Input
-                              className="form-control-alternative"
-                              defaultValue="United States"
-                              id="input-country"
-                              placeholder="Country"
-                              type="text"
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col lg="4">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-country"
-                            >
-                              Postal code
-                            </label>
-                            <Input
-                              className="form-control-alternative"
-                              id="input-postal-code"
-                              placeholder="Postal code"
-                              type="number"
-                            />
-                          </FormGroup>
-                        </Col>
+
+                        </FormGroup>
                       </Row>
                     </div>
                     <hr className="my-4" />
                     {/* Description */}
-                    <h6 className="heading-small text-muted mb-4">About me</h6>
+                    <h6 className="heading-small text-muted mb-4">No. of student responses</h6>
                     <div className="pl-lg-4">
-                      <FormGroup>
-                        <label>About Me</label>
-                        <Input
-                          className="form-control-alternative"
-                          placeholder="A few words about you ..."
-                          rows="4"
-                          defaultValue="A beautiful Dashboard for Bootstrap 4. It is Free and
-                          Open Source."
-                          type="textarea"
-                        />
-                      </FormGroup>
+                      <img src={studentattendance} alt="Logo" />
+
+                      <Row>
+
+                        <FormGroup>
+                          <label
+                            className="form-control-label"
+                            htmlFor="input-username"
+                          >
+                            Located towards the bottom of the page, this line graph shows the number of students
+                            who have completed the survey in each week. These figures can be used to verify student attendance,
+                            and/or aims to give teaching staff an understanding of the sample size in which the results above represent.
+                            </label>
+
+                        </FormGroup>
+                      </Row>
                     </div>
                   </Form>
                 </CardBody>
               </Card>
             </Col>
           </Row>
-        </Container>
+        </Container >
       </>
     );
   }

@@ -40,18 +40,21 @@ class UserHeader extends React.Component {
           <Container className="d-flex align-items-center" fluid>
             <Row>
               <Col lg="7" md="10">
-                <h1 className="display-2 text-white">Hello Jesse</h1>
+                <h1 className="display-2 text-white">Getting Started</h1>
                 <p className="text-white mt-0 mb-5">
-                  This is your profile page. You can see the progress you've
-                  made with your work and manage your projects or assigned tasks
+                  Welcome to Dragonfruit. We're glad to have you on board! With Dragonfruit, you can analyse student feedback
+                  that reflects their collaboration with staff and students, as well as, information about their engagement and understanding
+                  of teaching material.
                 </p>
-                <Button
+                <p className="text-white mt-0 mb-5">These simple instructions will help get you up and running as quickly
+                  as possible.</p>
+                {/* <Button
                   color="info"
                   href="#pablo"
                   onClick={e => e.preventDefault()}
                 >
                   Edit profile
-                </Button>
+                </Button> */}
               </Col>
             </Row>
           </Container>
