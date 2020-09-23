@@ -41,6 +41,9 @@ class RadarChart extends Component{
                                 suggestedMin: 0,
                                 suggestedMax: 5,
                                 stepSize: 1
+                            },
+                            pointLabels: {
+                                fontColor: "#ffffff"
                             }
                         }
                         

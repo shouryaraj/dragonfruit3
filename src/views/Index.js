@@ -8,7 +8,7 @@
 * Copyright 2019 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Creative Tim & Om & Two Doms
 
 =========================================================
 
@@ -48,6 +48,8 @@ import {
 
 import Header from "components/Headers/Header.js";
 
+import RadarChart from "../RadarChart"
+
 class Index extends React.Component {
   constructor(props) {
     super(props);
@@ -79,50 +81,17 @@ class Index extends React.Component {
                 <CardHeader className="bg-transparent">
                   <Row className="align-items-center">
                     <div className="col">
-                      <h6 className="text-uppercase text-light ls-1 mb-1">
+                      <h3 className="text-uppercase beFknWhite ls-1 mb-1">
                         Overview
-                      </h6>
-                      <h2 className="text-white mb-0">Sales value</h2>
-                    </div>
-                    <div className="col">
-                      <Nav className="justify-content-end" pills>
-                        <NavItem>
-                          <NavLink
-                            className={classnames("py-2 px-3", {
-                              active: this.state.activeNav === 1
-                            })}
-                            href="#pablo"
-                            onClick={e => this.toggleNavs(e, 1)}
-                          >
-                            <span className="d-none d-md-block">Month</span>
-                            <span className="d-md-none">M</span>
-                          </NavLink>
-                        </NavItem>
-                        <NavItem>
-                          <NavLink
-                            className={classnames("py-2 px-3", {
-                              active: this.state.activeNav === 2
-                            })}
-                            data-toggle="tab"
-                            href="#pablo"
-                            onClick={e => this.toggleNavs(e, 2)}
-                          >
-                            <span className="d-none d-md-block">Week</span>
-                            <span className="d-md-none">W</span>
-                          </NavLink>
-                        </NavItem>
-                      </Nav>
+                      </h3>
+                      
                     </div>
                   </Row>
                 </CardHeader>
                 <CardBody>
                   {/* Chart */}
                   <div className="chart">
-                    <Line
-                      data={chartExample1[this.state.chartExample1Data]}
-                      options={chartExample1.options}
-                      getDatasetAtEvent={e => console.log(e)}
-                    />
+                  <RadarChart />
                   </div>
                 </CardBody>
               </Card>
