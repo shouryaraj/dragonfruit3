@@ -49,6 +49,7 @@ import {
 import Header from "components/Headers/Header.js";
 
 import RadarChart from "../RadarChart"
+import LineGraph from "../LineGraph"
 
 import { Popover, Pane, Button as EvergreenButton, Text } from 'evergreen-ui'
 
@@ -86,29 +87,28 @@ class Index extends React.Component {
                       <h3 className="text-uppercase beFknWhite ls-1 mb-1" style={{ color: "#ffffff" }}>
                         Overview
                       </h3>
-
+                    </div>
+                    <div className="col-auto">
                       <Popover
                         content={
                           <Pane
-                            width={240}
-                            height={240}
+                            width={300}
+                            height={80}
                             display="flex"
-                            alignItems="right"
-                            justifyContent="right"
+                            alignItems="center"
+                            justifyContent="center"
                             flexDirection="column"
                           >
-                            <Text>
-                              <h6 style={{ color: "black" }}>Outward values mean that there have
+                            <h6 style={{ fontSize: "12px" }}>Outward values mean that there have
                               <br />
                               been more positive responses from students.
                               <br />
                               In general the larger the area the better.
-                              </h6>
-                            </Text>
+                            </h6>
                           </Pane>
                         }
                       >
-                        <EvergreenButton>What does this mean?</EvergreenButton>
+                        <EvergreenButton> ?</EvergreenButton>
                       </Popover>
                     </div>
                   </Row>
@@ -127,34 +127,40 @@ class Index extends React.Component {
                   <Row className="align-items-center">
                     <div className="col">
                       <h3 className="text-uppercase text-muted ls-1 mb-1">
-                        Survey Summary
+                        Survey Responses
                       </h3>
                     </div>
                   </Row>
                 </CardHeader>
-                <CardBody>
-                  <ul>
-                    <li>TEST</li>
-                    <li>TEST 2</li>
-
-                    <li>TEST</li>
-                    <li>TEST 2</li>
-
-                    <li>TEST</li>
-                    <li>TEST 2</li>
-
-                    <li>TEST</li>
-                    <li>TEST 2</li>
-
-                    <li>TEST</li>
-                    <li>TEST 2</li>
-
-                    <li>TEST</li>
-                    <li>TEST 2</li>
-
-                    <li>TEST</li>
-                    <li>TEST 2</li>
-                  </ul>
+                <CardBody style={{ overflow: "auto", height: "400px" }}>
+                  <Table className="align-items-center table-flush" responsive>
+                    <tbody>
+                      <tr>
+                        <td>Survey Response 1</td>
+                      </tr>
+                      <tr>
+                        <td>Survey Response 2</td>
+                      </tr>
+                      <tr>
+                        <td>Survey Response 3</td>
+                      </tr>
+                      <tr>
+                        <td>Survey Response 4</td>
+                      </tr>
+                      <tr>
+                        <td>Survey Response 5</td>
+                      </tr>
+                      <tr>
+                        <td>Survey Response 6</td>
+                      </tr>
+                      <tr>
+                        <td>Survey Response 7</td>
+                      </tr>
+                      <tr>
+                        <td>Survey Response 8</td>
+                      </tr>
+                    </tbody>
+                  </Table>
                 </CardBody>
               </Card>
             </Col>
@@ -175,7 +181,7 @@ class Index extends React.Component {
                 <CardBody>
                   {/* Chart */}
                   <div className="chart">
-                    {/* <RadarChart /> */}
+                    {/* <LineGraph /> */}
                   </div>
                 </CardBody>
               </Card>
