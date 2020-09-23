@@ -6,16 +6,38 @@ class LineChart extends Component {
         super(props);
         this.state = {
             data: {
-                labels: ["Week-1","Week-2","Week-3","Week-4","Week-5","Week-6","Week-7","Week-8"],
+                labels: ["Week-1","Week-2","Week-3","Week-4","Week-5","Week-6","Week-7"],
                 datasets: [{
                     label: ["Student Attendance"],
-                    data: [115,105,103,98,85,36,51,71],
+                    data: [115,105,103,98,85,36,51],
                     backgroundColor: 'rgba(255,255,255,0.2)',
                     borderColor: '#ffffff',
                     borderWidth: 2,
                 }]
             }
         }
+    }
+
+    componentDidMount(){
+
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+          };
+          
+          fetch("https://dragonfruit-server/getUnit", requestOptions)
+            .then(response => response.json())
+            .then((json) =>{
+                let currentWeek = "Week-" + json.week[0].number
+                let currentWeekAttendance = json.week[0].count
+                
+                let tempState = this.state.data
+                tempState.labels.push(currentWeek)
+                tempState.datasets[0].data.push(currentWeekAttendance)
+
+                this.setState(tempState)
+            })
+            .catch(error => console.log('error', error));
     }
 
     render() {
