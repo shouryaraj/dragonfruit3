@@ -34,6 +34,9 @@ class RadarChart extends Component {
                     options={{
                         responsive: true,
                         maintainAspectRatio: false,
+                        tooltips: {
+                            enabled: false
+                       },
                         gridLines: {
                             display: true,
                             color: "#ffffff"
