@@ -3,9 +3,14 @@ import { Button } from 'evergreen-ui'
 import './App.css';
 
 function App() {
+  
+  function sayHello() {
+    alert('Hello! Hack your degree');
+  }
+ 
   return (
     <div className="App">
-      <Button> Evergreen test! </Button>
+      <Button onClick={sayHello}> Evergreen test! </Button>
     </div>
   );
 }
