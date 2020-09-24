@@ -156,7 +156,7 @@ class Profile extends React.Component {
                       Average Student ratings
                     </h6>
                     <div className="pl-lg-4">
-                      <img src={ratingboxes} alt="Logo" />
+                      <img src={ratingboxes} alt="Logo" style={{ width: "100%" }} />
 
                       <Row>
 
@@ -165,6 +165,7 @@ class Profile extends React.Component {
                             className="form-control-label"
                             htmlFor="input-username"
                           >
+                            <br />
                             Little boxes on the top of the dashboard are filled with the average student ratings
                             for each survey measurement for the current week. Percentages are shown below these ratings,
                             which represent the increase/decrease of the current week's rating when compared
@@ -180,7 +181,7 @@ class Profile extends React.Component {
                       Overview: radar Chart
                     </h6>
                     <div className="pl-lg-4">
-                      <img src={radarchart} alt="Logo" />
+                      <img src={radarchart} alt="Logo" style={{ width: "60%", MarginLeft: "20%", MarginRight: "20%" }} />
 
                       <Row>
 
@@ -189,6 +190,7 @@ class Profile extends React.Component {
                             className="form-control-label"
                             htmlFor="input-username"
                           >
+                            <br />
                             Being the main focus of the dashboard, the radar chart shows all the survey measurements
                             in one place, which gives academic staff the ability to gain a good grasp of the student cohort's engagement and understanding
                             of weekly learning content. Moreover, results yielded within different weeks of the teaching semester can be compared against one another or filtered out in just one click on the right-sided icons.
@@ -202,7 +204,7 @@ class Profile extends React.Component {
                     {/* Description */}
                     <h6 className="heading-small text-muted mb-4">Student Comments</h6>
                     <div className="pl-lg-4">
-                      <img src={studentcomments} alt="Logo" />
+                      <img src={studentcomments} alt="Logo" style={{ width: "40%" }} />
 
                       <Row>
 
@@ -211,6 +213,7 @@ class Profile extends React.Component {
                             className="form-control-label"
                             htmlFor="input-username"
                           >
+                            <br />
                             At the end of each survey, students are encouraged to provide feedback on the current week's
                             learning content. To the right of the radar chart, these comments will be listed.
                             </label>
@@ -222,7 +225,7 @@ class Profile extends React.Component {
                     {/* Description */}
                     <h6 className="heading-small text-muted mb-4">No. of student responses</h6>
                     <div className="pl-lg-4">
-                      <img src={studentattendance} alt="Logo" />
+                      <img src={studentattendance} alt="Logo" style={{ width: "100%" }} />
 
                       <Row>
 
@@ -231,6 +234,7 @@ class Profile extends React.Component {
                             className="form-control-label"
                             htmlFor="input-username"
                           >
+                            <br />
                             Located towards the bottom of the page, this line graph shows the number of students
                             who have completed the survey in each week. These figures can be used to verify student attendance,
                             and/or aims to give teaching staff an understanding of the sample size in which the results above represent.
