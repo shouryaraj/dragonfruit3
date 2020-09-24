@@ -6,10 +6,10 @@ class LineChart extends Component {
         super(props);
         this.state = {
             data: {
-                labels: ["Week-1","Week-2","Week-3","Week-4","Week-5","Week-6","Week-7"],
+                labels: ["Week-1", "Week-2", "Week-3", "Week-4", "Week-5", "Week-6", "Week-7"],
                 datasets: [{
                     label: ["Student Attendance"],
-                    data: [115,105,103,98,85,36,51],
+                    data: [115, 105, 103, 98, 85, 36, 51],
                     backgroundColor: 'rgba(255,255,255,0.2)',
                     borderColor: '#ffffff',
                     borderWidth: 2,
@@ -18,19 +18,19 @@ class LineChart extends Component {
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
 
         var requestOptions = {
             method: 'GET',
             redirect: 'follow'
-          };
-          
-          fetch("https://dragonfruit-server/getUnit", requestOptions)
+        };
+
+        fetch("/getUnit", requestOptions)
             .then(response => response.json())
-            .then((json) =>{
+            .then((json) => {
                 let currentWeek = "Week-" + json.week[0].number
                 let currentWeekAttendance = json.week[0].count
-                
+
                 let tempState = this.state.data
                 tempState.labels.push(currentWeek)
                 tempState.datasets[0].data.push(currentWeekAttendance)
@@ -47,15 +47,15 @@ class LineChart extends Component {
                     data={this.state.data}
                     options={{
                         legend: {
-                                    display: true,
-                                    position: 'top',
-                                    labels:{
-                                        fontColor: "#ffffff",
-                                        fontFamily: 'Open Sans, sans-serif'
-                                    }   
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                fontColor: "#ffffff",
+                                fontFamily: 'Open Sans, sans-serif'
+                            }
                         },
                         scales: {
-                            yAxes:[{
+                            yAxes: [{
                                 ticks: {
                                     display: true,
                                     backdropColor: "#ffffff",
@@ -71,7 +71,7 @@ class LineChart extends Component {
                                     color: 'grey'
                                 }
                             }],
-                            xAxes:[{
+                            xAxes: [{
                                 ticks: {
                                     display: true,
                                     fontColor: "#ffffff",

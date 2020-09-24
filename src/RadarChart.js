@@ -26,16 +26,16 @@ class RadarChart extends Component {
 
     }
 
-    componentDidMount(){
+    componentDidMount() {
 
         var requestOptions = {
             method: 'GET',
             redirect: 'follow'
-          };
-          
-          fetch("https://dragonfruit-server/getUnit", requestOptions)
+        };
+
+        fetch("/getUnit", requestOptions)
             .then(response => response.json())
-            .then((json) =>{
+            .then((json) => {
                 let currentWeekData = []
                 currentWeekData.push(json.week[0].questions.C1)
                 currentWeekData.push(json.week[0].questions.B1)
@@ -43,7 +43,7 @@ class RadarChart extends Component {
                 currentWeekData.push(json.week[0].questions.A1)
                 currentWeekData.push(json.week[0].questions.A2)
                 currentWeekData.push(json.week[0].questions.O1)
-                
+
                 let tempState = this.state.data
                 tempState.datasets[1].data = currentWeekData
 
@@ -62,7 +62,7 @@ class RadarChart extends Component {
                         maintainAspectRatio: false,
                         tooltips: {
                             enabled: false
-                       },
+                        },
                         gridLines: {
                             display: true,
                             color: "#ffffff"
@@ -70,11 +70,11 @@ class RadarChart extends Component {
                         legend: {
                             display: true,
                             position: 'right',
-                            labels:{
+                            labels: {
                                 fontColor: "#ffffff",
                                 fontFamily: 'Open Sans, sans-serif',
                                 fontSize: 10
-                            }   
+                            }
                         },
                         scale: {
                             ticks: {
