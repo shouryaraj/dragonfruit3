@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8d675a46c63231b6027118248420dc62",
+    "revision": "95e6d715fb9a073c67167fa28fd87e1a",
     "url": "/index.html"
   },
   {
-    "revision": "6a68b821670514a55497",
+    "revision": "8ace910c1c495ef2754e",
     "url": "/static/css/2.79838944.chunk.css"
   },
   {
-    "revision": "69f7c6af150fc613d223",
+    "revision": "34d6370b9a2fb9052fc1",
     "url": "/static/css/main.09ebf7c1.chunk.css"
   },
   {
-    "revision": "6a68b821670514a55497",
-    "url": "/static/js/2.6404b368.chunk.js"
+    "revision": "8ace910c1c495ef2754e",
+    "url": "/static/js/2.ce381106.chunk.js"
   },
   {
     "revision": "10737a57bbb126c8ff93a7c9d0a9db9b",
-    "url": "/static/js/2.6404b368.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.ce381106.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "69f7c6af150fc613d223",
-    "url": "/static/js/main.7f2ebed3.chunk.js"
+    "revision": "34d6370b9a2fb9052fc1",
+    "url": "/static/js/main.a8056bee.chunk.js"
   },
   {
     "revision": "8d0d562f4ec3c131ac27d52de65ecd17",
-    "url": "/static/js/main.7f2ebed3.chunk.js.LICENSE.txt"
+    "url": "/static/js/main.a8056bee.chunk.js.LICENSE.txt"
   },
   {
     "revision": "016a509f5155127b89cb",
@@ -140,12 +140,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/profile-cover.e2582654.jpg"
   },
   {
+    "revision": "e481245521f13f64268af169bb3ef223",
+    "url": "/static/media/radarchart.e4812455.png"
+  },
+  {
+    "revision": "8d743acd82cac4a283c2704eb3446b26",
+    "url": "/static/media/ratingboxes.8d743acd.png"
+  },
+  {
     "revision": "c4eb3d0be0cf5a2d156a123bdf7fb40d",
     "url": "/static/media/react.c4eb3d0b.jpg"
   },
   {
     "revision": "e7c82e5c569db9d9761b13ef1384f702",
     "url": "/static/media/sketch.e7c82e5c.jpg"
+  },
+  {
+    "revision": "960e0787e3b4529ca233ac792793c739",
+    "url": "/static/media/studentattendance.960e0787.png"
+  },
+  {
+    "revision": "136442ed416fe18e2f4ffa2816499626",
+    "url": "/static/media/studentcomments.136442ed.png"
   },
   {
     "revision": "53033970a416368da35794389680266f",
