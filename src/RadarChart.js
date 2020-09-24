@@ -37,12 +37,13 @@ class RadarChart extends Component {
             .then(response => response.json())
             .then((json) => {
                 let currentWeekData = []
-                currentWeekData.push(json.week[0].questions.C1)
-                currentWeekData.push(json.week[0].questions.B1)
-                currentWeekData.push(json.week[0].questions.SR1)
-                currentWeekData.push(json.week[0].questions.A1)
-                currentWeekData.push(json.week[0].questions.A2)
-                currentWeekData.push(json.week[0].questions.O1)
+                let currentWeekAttendance = json.week[0].count
+                currentWeekData.push(parseInt(json.week[0].questions.C1) / currentWeekAttendance)
+                currentWeekData.push(parseInt(json.week[0].questions.B1) / currentWeekAttendance)
+                currentWeekData.push(parseInt(json.week[0].questions.SR1) / currentWeekAttendance)
+                currentWeekData.push(parseInt(json.week[0].questions.A1) / currentWeekAttendance)
+                currentWeekData.push(parseInt(json.week[0].questions.A2) / currentWeekAttendance)
+                currentWeekData.push(parseInt(json.week[0].questions.O1) / currentWeekAttendance)
 
                 let tempState = this.state.data
                 tempState.datasets[1].data = currentWeekData
@@ -79,8 +80,9 @@ class RadarChart extends Component {
                         scale: {
                             ticks: {
                                 display: false,
-                                suggestedMin: 0,
-                                suggestedMax: 5,
+                                beginAtZero: true,
+                                max: 5,
+                                min: 0,
                                 stepSize: 1,
                                 backdropColor: "#ffffff"
                             },

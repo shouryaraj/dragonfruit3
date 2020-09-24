@@ -58,7 +58,8 @@ class Index extends React.Component {
     super(props);
     this.state = {
       activeNav: 1,
-      chartExample1Data: "data1"
+      chartExample1Data: "data1",
+      items: []
     };
     if (window.Chart) {
       parseOptions(Chart, chartOptions());
@@ -72,7 +73,26 @@ class Index extends React.Component {
         this.state.chartExample1Data === "data1" ? "data2" : "data1"
     });
   };
+
+  componentDidMount() {
+    var requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    };
+
+    fetch("/getUnit", requestOptions)
+      .then(response => response.json())
+      .then((json) => {
+        let temp_items = json.week[0].questions.improvements[0];
+
+        this.setState({ items: temp_items })
+      })
+      .catch(error => console.log('error', error))
+  }
+
   render() {
+    let items = this.state.items
+
     return (
       <>
         <Header />
@@ -132,32 +152,33 @@ class Index extends React.Component {
                     </div>
                   </Row>
                 </CardHeader>
-                <CardBody style={{ overflow: "auto", height: "400px" }}>
+                <CardBody style={{ height: "400px" }}>
                   <Table className="align-items-center table-flush" responsive>
-                    <tbody>
+                    <tbody style={{ overflow: "hidden" }}>
+                      {/* {items.map(item => (
+                        <tr>
+                          <td>
+                            {item}
+                          </td>
+                        </tr>
+                      ))} */}
                       <tr>
-                        <td>Survey Response 1</td>
+                        <td>Explanation is very thorough and aids my understanding, keep up <br /> the great work!</td>
                       </tr>
                       <tr>
-                        <td>Survey Response 2</td>
+                        <td>Needs more worked examples, I'm quite a visual learner and the <br /> theory is quite difficult to absorb.</td>
                       </tr>
                       <tr>
-                        <td>Survey Response 3</td>
+                        <td>I think the amount of work is spot on.</td>
                       </tr>
                       <tr>
-                        <td>Survey Response 4</td>
+                        <td>Content is ok, the workload is just right however</td>
                       </tr>
                       <tr>
-                        <td>Survey Response 5</td>
+                        <td>Finding the breakouts very beneficial toward my understanding.</td>
                       </tr>
                       <tr>
-                        <td>Survey Response 6</td>
-                      </tr>
-                      <tr>
-                        <td>Survey Response 7</td>
-                      </tr>
-                      <tr>
-                        <td>Survey Response 8</td>
+                        <td>I need more practice questions.</td>
                       </tr>
                     </tbody>
                   </Table>
