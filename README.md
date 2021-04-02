@@ -50,7 +50,7 @@ By asking Cognitive & Behavioural questions in a quick 1-minute survey
 
 ### Our Team
 
-A Team of Passionate Engineers Obsessed with innovations.  
+A Team of Passionate Engineers Obsessed With Innovations.  
   
     
 [bugdebugger](https://github.com/shouryaraj)  
