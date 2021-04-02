@@ -1,4 +1,4 @@
-# Hackathon Project
+# Project Dragonfruit
 
 ## AIM 
 
@@ -16,9 +16,15 @@
 
 
 ## MVP 
-[Link of live website](https://dragonfruit3.herokuapp.com/admin/index)
+[Live website](https://dragonfruit3.herokuapp.com/admin/index)
 
 [Feedback System](https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_8But7iI82fysHCR)
+
+
+
+
+
+
 
 
 
