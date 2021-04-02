@@ -1,14 +1,14 @@
 ![Intro Image](https://github.com/dpham06/dragonfruit3/blob/master/images/intro.png "Intro")  
 
 
-## Project Dragonfruit
+
 
 
 
 
 ## AIM   
   
-A propose a solution that enhances the student learning and staff teaching experience both online and offline.  
+**Project Dragonfruit** propose a solution that enhances the student learning and staff teaching experience both online and offline.  
 
 
 ## Problem
