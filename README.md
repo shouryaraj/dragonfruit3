@@ -1,5 +1,7 @@
-# Project Dragonfruit
 ![Intro Image](https://github.com/dpham06/dragonfruit3/blob/master/images/intro.png "Intro")  
+
+
+## Project Dragonfruit
 
 
 
