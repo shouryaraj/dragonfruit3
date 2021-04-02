@@ -29,16 +29,18 @@ By asking Cognitive & Behavioural questions in a quick 1-minute survey
 
 
 ## MVP 
+
+### Web Application
 ![Image of Dashboard](https://github.com/dpham06/dragonfruit3/blob/master/images/dragonfruit.png "Dashboard")  
   
 
 [**Live website**](https://dragonfruit3.herokuapp.com/admin/index)
 
-
+### Feedback Application
 ![Image of Feedback](https://github.com/dpham06/dragonfruit3/blob/master/images/paint.png "Feedback")
+  
 
-
-[**Feedback System**](https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_8But7iI82fysHCR)
+[**Live Feedback System**](https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_8But7iI82fysHCR)
 
 
 
